@@ -16,10 +16,25 @@
 
       <div class="send">
         <h1> Send Amount </h1>
+        <div>
         <input type="text" id="send-amount" placeholder="Send Amount" />
         <input type="text" id="recipient" placeholder="Recipient" />
-        <div class="button" id="transfer-amount">
-          Transfer Amount
+          <div class="button" id="transfer-amount">
+            Transfer Amount
+          </div>
+        </div>
+        <div style="margin-top: 10; float: left;">
+          Transaction Authentication:
+          <input type="text" id="tx-signature" placeholder="Enter transaction signature (JSON string)" size="50"/>
+        </div>
+        <br>
+        <br>
+        <div>
+          <p>Sign a message of the form <code>{to: [Recipient address], amount: [Amount]}</code> using your private key.
+          <br>
+          <br>
+          Use the test script to generate the signature (a JSON string of the form <code>{r: "...", s: "..."}</code>)
+        </p>
         </div>
       </div>
     </div>
